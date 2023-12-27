@@ -23,6 +23,13 @@
     <namespace>http://dspace.org/namespace/local/</namespace>
   </dc-schema>
 
+  <dc-type>
+    <schema>local</schema>
+    <element>nameHeader</element>
+    <qualifier></qualifier>
+    <scope_note></scope_note>
+  </dc-type>
+
 <!--
   <dc-type>
     <schema>local</schema>
