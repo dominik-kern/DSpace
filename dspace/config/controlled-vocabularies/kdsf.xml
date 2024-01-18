@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node id="kdsf" label="kdsf">
+    <isComposedBy>
+        <node id="K1" label="Arbeit und Wirtschaft">
+            <isComposedBy>
+                <node id="139" label="Arbeit und Wirtschaft - Allgemein"></node>
+                <node id="111" label="Arbeitswelt und -gestaltung"></node>
+                <node id="067" label="Digitale Wirtschaft"></node>
+            </isComposedBy>
+        </node>
+        <node id="K2" label="Erde und Kosmos">
+            <isComposedBy>
+                <node id="172" label="Erde und Kosmos - Allgemein"></node>
+                <node id="366" label="Materie"></node>
+                <node id="400" label="Planet Erde"></node>
+                <node id="512" label="Regionen der Erde"></node>
+                <node id="417" label="Weltraum"></node>
+            </isComposedBy>
+        </node>
+        <node id="K3" label="Globalisierung und Nachhaltigkeit">
+            <isComposedBy>
+                <node id="007" label="Globalisierung und Nachhaltigkeit - Allgemein"></node>
+                <node id="728" label="Entwicklungszusammenarbeit"></node>
+                <node id="771" label="Migration"></node>
+                <node id="544" label="Nachhaltigkeit"></node>
+            </isComposedBy>
+        </node>
+        <node id="K4" label="Industrie">
+            <isComposedBy>
+                <node id="515" label="Industrie - Allgemein"></node>
+                <node id="783" label="Entsorgung und Recycling"></node>
+                <node id="091" label="Intelligente Produktion"></node>
+                <node id="039" label="Robotik"></node>
+            </isComposedBy>
+        </node>
+        <node id="K5" label="Informationstechnologie">
+            <isComposedBy>
+                <node id="080" label="Informationstechnologie - Allgemein"></node>
+                <node id="837" label="Informationssicherheit"></node>
+                <node id="586" label="Informationssysteme"></node>
+                <node id="434" label="Informationstechnik"></node>
+                <node id="524" label="Internet der Dinge"></node>
+                <node id="073" label="Künstliche Intelligenz und Big Data"></node>
+                <node id="336" label="Simulationsforschung"></node>
+            </isComposedBy>
+        </node>
+        <node id="K6" label="Infrastruktur">
+            <isComposedBy>
+                <node id="407" label="Infrastruktur - Allgemein"></node>
+                <node id="991" label="Ballungsräume und Stadtentwicklung"></node>
+                <node id="360" label="Bauen und Wohnen"></node>
+                <node id="851" label="Infrastruktur und Netze"></node>
+                <node id="940" label="Mobilität, Transport und Verkehr"></node>
+            </isComposedBy>
+        </node>
+        <node id="K7" label="Kognition und Wissen">
+            <isComposedBy>
+                <node id="558" label="Kognition und Wissen - Allgemein"></node>
+                <node id="006" label="Innovation"></node>
+                <node id="391" label="Lernen und Lernprozesse"></node>
+                <node id="444" label="Menschliches Gehirn"></node>
+                <node id="132" label="Sprache und Spracherlernen"></node>
+                <node id="470" label="Wissenstransfer und Wissensrepräsentation"></node>
+            </isComposedBy>
+        </node>
+        <node id="K8" label="Kultur">
+            <isComposedBy>
+                <node id="592" label="Kultur - Allgemein"></node>
+                <node id="209" label="Kreativität und Darbietung"></node>
+                <node id="743" label="Kulturgüter und kulturelles Erbe"></node>
+                <node id="548" label="Medien"></node>
+            </isComposedBy>
+        </node>
+        <node id="K9" label="Leben und Wohlergehen">
+            <isComposedBy>
+                <node id="910" label="Leben und Wohlergehen - Allgemein"></node>
+                <node id="169" label="Künstliches oder synthetisches Leben"></node>
+                <node id="521" label="Lebewesen"></node>
+                <node id="841" label="Prävention von Krankheiten"></node>
+                <node id="530" label="Therapie und Heilung"></node>
+                <node id="213" label="Zellen und Gene"></node>
+            </isComposedBy>
+        </node>
+        <node id="K10" label="Materialien">
+            <isComposedBy>
+                <node id="051" label="Materialien - Allgemein"></node>
+                <node id="539" label="Oberflächen und Grenzflächen"></node>
+                <node id="508" label="Polymere"></node>
+                <node id="426" label="Werkstoffe"></node>
+            </isComposedBy>
+        </node>
+        <node id="K11" label="Mensch und Gesellschaft">
+            <isComposedBy>
+                <node id="101" label="Mensch und Gesellschaft - Allgemein"></node>
+                <node id="660" label="Demographischer Wandel"></node>
+                <node id="147" label="Gewalt, Konflikte und Gefahrenabwehr"></node>
+                <node id="687" label="Gleichstellung, Diversität und Inklusion"></node>
+                <node id="307" label="Politische Ordnung"></node>
+                <node id="283" label="Transparenz und Verantwortung"></node>
+                <node id="488" label="Werte und Wandel"></node>
+            </isComposedBy>
+        </node>
+        <node id="K12" label="Natur und Umwelt">
+            <isComposedBy>
+                <node id="663" label="Natur und Umwelt - Allgemein"></node>
+                <node id="197" label="Klimaveränderung"></node>
+                <node id="240" label="Nahrung und Versorgung"></node>
+                <node id="231" label="Natürliche Ressourcen"></node>
+                <node id="847" label="Nutzung und Pflege von Naturräumen und Landschaften"></node>
+                <node id="196" label="Ökosysteme und Biodiversität"></node>
+                <node id="697" label="Schutz und Sicherheit vor Naturgefahren und Reaktorsicherheit"></node>
+            </isComposedBy>
+        </node>
+        <node id="K13" label="Technologie">
+            <isComposedBy>
+                <node id="578" label="Technologie - Allgemein"></node>
+                <node id="070" label="Energieerzeugung und Energieumwandlung"></node>
+                <node id="092" label="Halbleitertechnologie"></node>
+                <node id="476" label="Mikro- und Nanosysteme"></node>
+                <node id="179" label="Optik und Photonik"></node>
+                <node id="772" label="Quantentechnologien"></node>
+            </isComposedBy>
+        </node>
+        <node id="K14" label="Wissenschaft">
+            <isComposedBy>
+                <node id="605" label="Wissenschaft - Allgemein"></node>
+                <node id="981" label="Infrastrukturen der Wissenschaft"></node>
+                <node id="459" label="Open Science"></node>
+                <node id="266" label="Wissenschaftsforschung"></node>
+            </isComposedBy>
+        </node>
+        <node id="K15" label="Keines der gelisteten Forschungsfelder">
+            <isComposedBy>
+                <node id="001" label="Anderes Forschungsfeld"></node>
+                <node id="002" label="Disziplinäre Forschung"></node>
+            </isComposedBy>
+        </node>
+    </isComposedBy>
+</node>
