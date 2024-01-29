@@ -18,6 +18,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.Logger;
 import org.dspace.content.Item;
 import org.dspace.content.MetadataFieldName;
@@ -61,7 +62,9 @@ public class PersonCustomMeetadataConsumer implements Consumer {
     @Override
     public void consume(Context context, Event event) throws Exception {
         Item item = (Item) event.getSubject(context);
-        if (item == null || !item.isArchived() || itemsAlreadyProcessed.contains(item) || !isPerson(item)) {
+        if (item == null || !item.isArchived() || itemsAlreadyProcessed.contains(item) || !isPerson(item) ||
+            metadataNames == null || metadataNames.size() == 0 ||
+            metadataFormat == null || metadataFormat.size() == 0) {
             return;
         }
 
@@ -98,8 +101,8 @@ public class PersonCustomMeetadataConsumer implements Consumer {
         String metadataValue = generateMetadataValue(person, metadataFormat);
         MetadataFieldName field = new MetadataFieldName(metadataName);
 
-        itemService.clearMetadata(context, person, field.schema, field.element, field.qualifier, Item.ANY);
         if (isNotBlank(metadataValue)) {
+            itemService.clearMetadata(context, person, field.schema, field.element, field.qualifier, Item.ANY);
             itemService.addMetadata(
                     context, person, field.schema, field.element, field.qualifier, null, metadataValue);
         }
@@ -109,7 +112,9 @@ public class PersonCustomMeetadataConsumer implements Consumer {
         for (String placeholderMetadata : getPlaceholderMetadataNames(metadataFormat)) {
             MetadataFieldName field = new MetadataFieldName(placeholderMetadata);
             String placeholderValue = itemService.getMetadataFirstValue(person, field, Item.ANY);
-            metadataFormat = metadataFormat.replace("{" + placeholderMetadata + "}", placeholderValue);
+            if (StringUtils.isNotBlank(placeholderValue)) {
+                metadataFormat = metadataFormat.replace("{" + placeholderMetadata + "}", placeholderValue);
+            }
         }
         return metadataFormat;
     }
