@@ -33,10 +33,10 @@ import org.dspace.services.factory.DSpaceServicesFactory;
 /**
  * Implementation of {@link Consumer} that adds custom metadata to Person.
  */
-public class PersonCustomMeetadataConsumer implements Consumer {
+public class PersonCustomMetadataConsumer implements Consumer {
 
     private final static Logger log = org.apache.logging.log4j.LogManager
-            .getLogger(PersonCustomMeetadataConsumer.class);
+            .getLogger(PersonCustomMetadataConsumer.class);
 
     private static final String METADATA_PLACEHOLDER = "\\{([^{}]+)\\}";
 

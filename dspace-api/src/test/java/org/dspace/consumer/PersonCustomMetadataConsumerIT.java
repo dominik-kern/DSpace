@@ -32,9 +32,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Integration tests for {@link PersonCustomMeetadataConsumer}.
+ * Integration tests for {@link PersonCustomMetadataConsumer}.
  */
-public class PersonCustomMeetadataConsumerIT extends AbstractIntegrationTestWithDatabase {
+public class PersonCustomMetadataConsumerIT extends AbstractIntegrationTestWithDatabase {
 
     private final ConfigurationService configurationService = DSpaceServicesFactory
             .getInstance().getConfigurationService();
