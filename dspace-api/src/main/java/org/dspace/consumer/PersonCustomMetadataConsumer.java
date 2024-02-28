@@ -115,7 +115,11 @@ public class PersonCustomMetadataConsumer implements Consumer {
             if (StringUtils.isNotBlank(placeholderValue)) {
                 metadataFormat = metadataFormat.replace("{" + placeholderMetadata + "}", placeholderValue);
             }
+            else {
+                metadataFormat = metadataFormat.replace("{" + placeholderMetadata + "}", "");
+            } 
         }
+        metadataFormat = metadataFormat.strip();
         return metadataFormat;
     }
 
