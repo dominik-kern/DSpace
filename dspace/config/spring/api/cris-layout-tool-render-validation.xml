@@ -55,6 +55,7 @@
             <list>
                 <value>doi</value>
                 <value>hdl</value>
+                <value>gnd</value>
                 <value>scopus</value>
                 <value>researcherid</value>
                 <value>mailto</value>
@@ -130,4 +131,3 @@
     <bean id="valuePairSupplier" class="org.dspace.layout.script.supplier.ValuePairSupplier"/>
 
 </beans>
-
