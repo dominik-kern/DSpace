@@ -181,6 +181,8 @@ public abstract class IndexFactoryImpl<T extends IndexableObject, S> implements 
             separator = SearchUtils.FILTER_SEPARATOR;
         }
         String acvalue = sortValue + separator + fvalue + SearchUtils.AUTHORITY_SEPARATOR + authority;
+        //System.out.println(field + " " + acvalue);   //DK
+        //System.out.println("  "); //DK
         document.addField(field + "_filter", acvalue);
         // build the solr field used for the keyword search
         document.addField(field + "_keyword", fvalue);

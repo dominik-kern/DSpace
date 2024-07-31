@@ -34,7 +34,7 @@ import org.junit.Test;
 /**
  * Integration tests for {@link PersonCustomMetadataConsumer}.
  */
-public class PersonCustomMetadataConsumerIT extends AbstractIntegrationTestWithDatabase {
+public class PublicationCustomMetadataConsumerIT extends AbstractIntegrationTestWithDatabase {
 
     private final ConfigurationService configurationService = DSpaceServicesFactory
             .getInstance().getConfigurationService();
