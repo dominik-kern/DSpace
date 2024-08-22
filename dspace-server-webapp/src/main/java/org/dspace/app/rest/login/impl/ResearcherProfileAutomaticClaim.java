@@ -128,7 +128,7 @@ public class ResearcherProfileAutomaticClaim implements PostLoggedInAction {
 
     private String getValueToSearchFor(Context context, EPerson currentUser) {
         if ("email".equals(ePersonField)) {
-            return currentUser.getEmail();
+            return currentUser.getEmail().toLowerCase();
         }
         return ePersonService.getMetadataFirstValue(currentUser, new MetadataFieldName(ePersonField), Item.ANY);
     }
