@@ -80,6 +80,7 @@ public class ItemSearcherByMetadata implements ItemSearcher, ItemReferenceResolv
 
     @Override
     public Item searchBy(Context context, String searchParam, Item source) {
+        //String searchParam = searchParamIn.replaceAll("https://ror.org/","");
         try {
             if (source != null) {
                 referenceResolutionAttempts.get().get(searchParam).add(source.getID());

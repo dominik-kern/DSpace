@@ -108,6 +108,7 @@ public class RorOrgUnitAuthority extends ItemAuthority {
 
         if (useAsData(extraType)) {
             extras.put("data-" + key, value);
+            //extras.put("data-" + key, "Data"); // for debugging
         }
         if (useForDisplaying(extraType)) {
             extras.put(key, value);
@@ -116,13 +117,11 @@ public class RorOrgUnitAuthority extends ItemAuthority {
     }
 
     private boolean useForDisplaying(String extraType) {
-        return configurationService.getBooleanProperty("cris.OrcidAuthority."
-            + getPluginInstanceName() + "." + extraType + ".display", true);
+        return configurationService.getBooleanProperty("cris.OrcidAuthority." + getPluginInstanceName() + "." + extraType + ".display", true);
     }
 
     private boolean useAsData(String extraType) {
-        return configurationService.getBooleanProperty("cris.OrcidAuthority."
-            + getPluginInstanceName() + "." + extraType + ".as-data", true);
+        return configurationService.getBooleanProperty("cris.OrcidAuthority." + getPluginInstanceName() + "." + extraType + ".as-data", true);
     }
 
     private String getKey(String extraType) {
