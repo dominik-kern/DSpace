@@ -148,8 +148,9 @@ public abstract class DSpaceObjectServiceImpl<T extends DSpaceObject> implements
         StringTokenizer dcf = new StringTokenizer(mdString, ".");
 
         String[] tokens = {"", "", ""};
+
         int i = 0;
-        while (dcf.hasMoreTokens()) {
+        while (dcf.hasMoreTokens() && i<3) {
             tokens[i] = dcf.nextToken().trim();
             i++;
         }
